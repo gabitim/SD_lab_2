@@ -5,6 +5,7 @@
     <persistence-unit name="bazaDeDateSQLite" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>ejb.StudentEntity</class>
+        <class>ejb.CourseEntity</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC" />
             <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:E:\facultate\AN_3_SEM_2\SD\lab_2\JEE-App\student.db" />

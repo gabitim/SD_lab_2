@@ -4,11 +4,13 @@
 <web-app>
     <display-name>Web Component App</display-name>
 
+    <!--Bank stateful servlet-->
     <servlet>
         <servlet-name>ProcessBankOperation</servlet-name>
         <servlet-class>ProcessBankOperationServlet</servlet-class>
     </servlet>
 
+    <!--Student servlets-->
     <servlet>
         <servlet-name>ProcessStudent</servlet-name>
         <servlet-class>ProcessStudentServlet</servlet-class>
@@ -26,11 +28,31 @@
         <servlet-class>RemoveStudentServlet</servlet-class>
     </servlet>
 
+    <!--Course servlets-->
+    <servlet>
+        <servlet-name>ProcessCourse</servlet-name>
+        <servlet-class>course.ProcessCourseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateCourse</servlet-name>
+        <servlet-class>course.UpdateCourseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FetchCoursesList</servlet-name>
+        <servlet-class>course.FetchCoursesListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveCourse</servlet-name>
+        <servlet-class>course.RemoveCourseServlet</servlet-class>
+    </servlet>
+
+    <!--Bank stateful servlet-mapping-->
     <servlet-mapping>
         <servlet-name>ProcessBankOperation</servlet-name>
         <url-pattern>/process-bank-operation</url-pattern>
     </servlet-mapping>
 
+    <!--Student servlet-mapping-->
     <servlet-mapping>
         <servlet-name>ProcessStudent</servlet-name>
         <url-pattern>/process-student</url-pattern>
@@ -46,6 +68,24 @@
     <servlet-mapping>
         <servlet-name>RemoveStudent</servlet-name>
         <url-pattern>/delete-student</url-pattern>
+    </servlet-mapping>
+
+    <!--Course servlet-mapping-->
+    <servlet-mapping>
+        <servlet-name>ProcessCourse</servlet-name>
+        <url-pattern>/process-course</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FetchCoursesList</servlet-name>
+        <url-pattern>/fetch-courses-list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateCourse</servlet-name>
+        <url-pattern>/update-course</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveCourse</servlet-name>
+        <url-pattern>/delete-course</url-pattern>
     </servlet-mapping>
 
 

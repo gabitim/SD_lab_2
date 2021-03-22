@@ -39,5 +39,14 @@
         <br/>
         <hr>
 
+        <h3>Baza de date cu cursuri</h3>
+        <a href="./formular_curs.jsp">Adaugare curs</a>
+        <br />
+        <a href="./fetch-courses-list">Afisare lista cursuri</a>
+        <br />
+        <a href="./formular_cautare_curs.jsp">Actualizare curs</a>
+        <br />
+        <a href="./formular_stergere_curs.jsp">Stergere curs</a>
+
     </body>
 </html>
